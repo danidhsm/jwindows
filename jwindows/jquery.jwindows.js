@@ -1,5 +1,9 @@
  /**
  * plugin para hacer ventanas de escritorio
+ * Daniel Hermógenes Sánchez Merlo
+ * v.1.0
+ * 
+ * 
  */
 
 
