@@ -156,10 +156,10 @@
                 //----------------------------
                 
                 minimizeall.hover(function(){
-                		$('.jwindows-window:visible').css('opacity',0.5);
+                		$('.jwindows-window:visible').css({'opacity':0.4,'border':'1px solid #000'});
                 	}
                 	,function(){
-                		$('.jwindows-window:visible').css('opacity',1);
+                		$('.jwindows-window:visible').css({'opacity':1,'border':'none'});
                 	}
                 );
                 
@@ -520,7 +520,9 @@
 	                                	ventana.trigger(event,minimize);
 	                                	
 	                                	if(event.result || event.result==undefined){
-	                                		ventana.stop(true,true).slideToggle().toggleClass('jwindows-minimized jwindows-opened');    
+	                                		contenido.stop(true,true).slideToggle(function(){
+	                                			ventana.stop(true,true).slideToggle().toggleClass('jwindows-minimized jwindows-opened');
+	                                		});
 	                                	}
 	                                });
 	                               

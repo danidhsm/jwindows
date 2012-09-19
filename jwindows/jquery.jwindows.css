@@ -54,37 +54,39 @@
 }
 
 .jwindows-stun{
-    z-index: 9999998 !important;
+	/*z-index: 9999998 !important;*/
     top:0;
     left:0;
+    bottom:0;
+    right:0;
     height:100%;
     width:100%;
-    position:absolute;
+    position:fixed;
     background: gray;
     opacity:0.3;
 }
 
 .jwindows-alert{
-    width:auto;
-    height:auto;
+    width:auto !important;
+    height:auto !important;
     z-index: 9999999 !important;
 }
 
 .jwindows-notification{
-    width:auto;
-    height:auto;
+    width:auto !important;
+    height:auto !important;
     text-align: center;
 }
 
 .jwindows-prompt{
-    width:auto;
-    height:auto;
+    width:auto !important;
+    height:auto !important;
     text-align: center;
 }
 
 .jwindows-messageBox{
-    width:auto;
-    height:auto;
+    width:auto !important;
+    height:auto !important;
     text-align: center;
     z-index: 9999999 !important;
 }
