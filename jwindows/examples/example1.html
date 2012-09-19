@@ -18,6 +18,15 @@
 
 </div>
 
+<div id="ejecutores_iframe">
+
+	<div id="eji1">Icono11</div>
+	<div id="eji2">Icono22</div>
+	<div id="eji3">Icono33</div>
+	<div id="eji4">Icono44</div>
+
+</div>
+
 <div id='ventanas'>
 	
 	<div id="v1"><div>Contenido ventana1</div></div>
@@ -29,7 +38,7 @@
 
 <div id='ventanas_iframe'>
 	
-	<div id="vi1"><iframe src="http://bing.com"></iframe></div>
+	<div id="vi1"><iframe></iframe></div>
 	<div id="vi2"><iframe></iframe></div>
 	<div id="vi3"><iframe></iframe></div>
 	<div id="vi4"><iframe></iframe></div>
@@ -47,9 +56,18 @@ $('#ventanas > div').jwindows({
 	
 	titles		: ['apli1','apli2','apli3','apli4'],
 	ejecutores	: '#ejecutores > div',
-	reload		: false
+	reload		: false,
+	center		: true
 	
 	
+});
+
+$('#ventanas_iframe > div').jwindows({
+	titles		: ["apli11","apli22","apli33","apli44"],
+	ejecutores	: "#ejecutores_iframe > div",
+	taskbar		: ".jwindows-taskbar",
+	srcs		: ["http://bing.com","http://bing.com","http://bing.com","http://bing.com"],
+	center		: true
 });
 </script>
 

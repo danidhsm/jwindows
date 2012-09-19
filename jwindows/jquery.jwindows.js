@@ -218,7 +218,7 @@
                     
                     
                     function cargar(){
-                		var load = $("<div class='jwindows-load' style='background: white url(\"call/fw/res/Scripts/JQuery/plugins/jwindows/v1.0/images/load.gif\") no-repeat center; width:100%;height: 100%;display: block;position: absolute;z-index: 1000;'></div>");
+                		var load = $("<div class='jwindows-load' style='background: white url(\"../images-jwindows/load.gif\") no-repeat center; width:100%;height: 100%;display: block;position: absolute;z-index: 1000;'></div>");
                 		load.width(ventana.width()).height(ventana.height());
                 		ventana.prepend(load);
                 	}
@@ -387,16 +387,16 @@
 	                                switch(settings.icons[indice])
 	                                {
 	                                	case "error":
-	                                		iconoruta="call/fw/res/Scripts/JQuery/plugins/jwindows/v1.0/images/icon_error.png";
+	                                		iconoruta="../images-jwindows/icon_error.png";
 	                                		break;
 	                                	case "warning":
-	                                		iconoruta="call/fw/res/Scripts/JQuery/plugins/jwindows/v1.0/images/icon_warning.png";
+	                                		iconoruta="../images-jwindows/icon_warning.png";
 	                                		break;
 	                                	case "info": 
-	                                		iconoruta="call/fw/res/Scripts/JQuery/plugins/jwindows/v1.0/images/icon_info.png";
+	                                		iconoruta="../images-jwindows/icon_info.png";
 	                                		break;
 	                                	case "question":
-	                                		iconoruta="call/fw/res/Scripts/JQuery/plugins/jwindows/v1.0/images/icon_question.png";
+	                                		iconoruta="../images-jwindows/icon_question.png";
 	                                		break;
 	                                	default:
 	                                		iconoruta=settings.icons[indice];
