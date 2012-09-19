@@ -117,7 +117,7 @@
 	               
 	                var ul=$('<ul></ul>').html(cerrar);
 	                var contextmenu=$('<div class="jwindows-taskbar-context-menu"></div>').html(ul).appendTo('body');
-	                jq(document).click(function(e){  
+	                $(document).click(function(e){  
 	                    if(e.button == 0){  
 	                        contextmenu.css("display","none");
 	                    }  
@@ -126,7 +126,7 @@
 	                taskbar.bind('contextmenu', function(e){
             
             		/*seleccionamos el target del boton derecho*/
-            		var aplicacionselec=jq(e.target);
+            		var aplicacionselec=$(e.target);
 
             		/*si no es una aplicacion buscamos la aplicacion que este por encima si tiene*/
             		if(!aplicacionselec.hasClass('jwindows-taskbar-application')){

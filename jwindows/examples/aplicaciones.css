@@ -1,0 +1,334 @@
+
+
+.jwindows-taskbar{
+	position: fixed;
+	bottom:0px;
+    left:0px;
+}
+
+
+.tmp_navegadoraplicaciones_pack {
+    
+    background-color: #bdd8eb;
+    /*clear: both;*/
+    color: #607EEE;
+    /*position: absolute;*/
+    cursor: pointer;
+    box-shadow: -1px 1px 1px 1px #E9EAF3 inset;
+    bottom:0px;
+    left:0px;
+    font-family: arial,verdana,helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    width: 170px;
+    margin-bottom: 1px;
+    text-transform: capitalize;
+    line-height: 30px;
+    
+    float:left;
+}
+.tmp_navegadoraplicaciones_pack:hover{
+	box-shadow: 0 0 5px 1px;
+	background-color: #CCE8FC;
+}
+
+.tmp_navegadoraplicaciones_pack_nombre  {
+    float: left;
+}
+
+.tmp_navegadoraplicaciones_pack_imagen {
+    float: left;
+    width: 30px;
+}
+.tmp_navegadoraplicaciones_pack_imagen img{
+	float: left;
+    height: 34px;
+    margin-top: -4px;
+    width: 28px;
+}
+
+.tmp_navegadoraplicaciones_app_CNT{
+	position: absolute;
+	bottom:36px;
+    left:10px;
+	width: 165px;
+	z-index:9999999;
+	background-color: #fff;
+	border-radius:6px 6px 0px 0px;
+	border:1px solid #CCE8FC;
+	margin-left: -8px;
+	box-shadow: 0 0 3px 1px #9DB7C2;
+}
+
+.tmp_navegadoraplicaciones_app_imagen {
+	float: left;
+    width: 30px;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+.tmp_navegadoraplicaciones_app_imagen img {
+	float:left;
+    width:20px;
+    height:20px;
+}
+.tmp_navegadoraplicaciones_app{
+	float: left;
+	width: 165px;
+	border-bottom: 1px solid #CCE8FC;
+	height: 28px;
+	
+}
+.tmp_navegadoraplicaciones_app:hover{
+	background-color:#F3F9FE;	
+}
+.tmp_navegadoraplicaciones_app_nombre{
+	float: left;
+    height: 25px;
+    padding-top: 6px;
+    position: absolute;
+    text-align: left;
+    width: 124px;
+    color: #666666;
+    left:0;
+    padding-left: 43px;
+}
+
+.tmp_navegadoraplicaciones_app{
+	cursor:pointer;
+}
+
+.tmp_escritorio_iconos_NOMBRE {
+	color: #777;
+	/*opacity:0.5;*/
+}
+
+
+
+
+/*VENTANAS*/
+.jwindows-minimize,
+.jwindows-maximize,
+.jwindows-close,
+.jwindows-print,
+.jwindows-reload{
+	cursor:pointer;
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+	background-size: cover;
+}
+
+.jwindows-minimize:hover,
+.jwindows-maximize:hover,
+.jwindows-close:hover,
+.jwindows-print:hover,
+.jwindows-reload:hover{
+	cursor:pointer;
+	filter:alpha(opacity=100);
+	opacity: 1;
+}
+
+.jwindows-minimize{
+	background: url("../images-jwindows/minimize.png") no-repeat center center;
+}
+
+.jwindows-maximize{
+	background: url("../images-jwindows/maximize.png") no-repeat center center;
+}
+
+.jwindows-close{
+	background: url("../images-jwindows/close.png") no-repeat center center;
+}
+
+.jwindows-reload{
+	background: url("../images-jwindows/reload.png") no-repeat center center;
+}
+
+.jwindows-print{
+	background: url("../images-jwindows/printer.png") no-repeat center center;
+}
+
+
+
+.taskbarapplication:hover{
+
+	background:#E3ECF4;
+	
+}
+
+#barra_de_aplicaciones{
+	bottom: 5px;
+    height: 25px;
+	left: 175px;
+	position: fixed;
+}
+
+
+.jwindows-window{
+
+	width:500px;
+    height:400px;
+    border: 1px solid #E9EAF3;
+    padding:25px 0 0 0;
+    background:#95B7D0;
+    box-shadow:0px 0px 3px 1px #9db7c2;
+    border-radius:6px;
+    
+    text-shadow:0 -1 0 #999;
+	box-shadow: 3px 3px 19px #999;
+	-webkit-box-shadow: 3px 3px 19px #999;    
+}
+
+
+.jwindows-window .jwindows-loaded{
+	top:100px;
+	left:200px;
+	width:650px;
+}
+
+.jwindows-mmc{
+
+    float:right;
+}
+
+.jwindows-minimize-all{
+    display:block;
+    width:20px;
+    box-shadow: 0 1px 2px 1px #E9EAF3 inset;
+    float:right;
+    height:100%;
+    border: 1px solid white;
+}
+
+.jwindows-mmc > div{
+
+    height:20px;
+    float:left;
+    width:30px;
+
+}
+
+.jwindows-bh{
+
+	height:25px;
+	float:left;
+	margin-top:-25px;
+	line-height:25px;
+}
+
+.jwindows-title{
+    float:left;
+	font-weight: bold;
+	color:white;
+	cursor:default;
+}
+.jwindows-icon{
+    float:left;
+    padding:3px;
+    
+}
+.jwindows-icon img{
+    height:20px;
+}
+
+
+.jwindows-taskbar{
+    background:#95B7D0;
+    height:28px;
+    border:1px solid #DADADA;
+    box-shadow: -1px 1px 2px 1px #E9EAF3 inset;
+}
+
+.jwindows-taskbar-application:hover{
+    background:#F8C255;
+}
+
+.jwindows-taskbar-application{
+    box-shadow: -1px 1px 2px 1px #E9EAF3 inset;
+    border-radius: 2px 2px;
+    border: 1px solid white;
+    float:left;
+    padding:5px;
+    margin: 0px 1px;
+    cursor:pointer;
+}
+
+.jwindows-taskbar-icon{
+    float:left;
+}
+
+.jwindows-taskbar-icon > img{
+	height:20px;
+}
+
+.jwindows-taskbar-active{
+    background:#CCE8FC;
+}
+
+.jwindows-taskbar-title{
+    float:left;
+    padding:0px 5px;
+    text-shadow:0px 0px 2px white;
+
+}
+
+.jwindows-content{
+    background:#D3D4DA;
+    /*box-shadow:0 0 2px 1px  black inset;*/
+    border:0;
+    background:white;
+}
+
+
+.jwindows-active{
+    /*border-radius:6px 6px 0px 0px;*/
+	/*box-shadow:0px 2px 8px 1px #9db7c2;*/
+	background:#CCE8FC;
+}
+
+
+/*menu contextual*/
+
+
+.jwindows-taskbar-context-menu{
+	background:#95B7D0;
+	padding:4px;
+	border:1px solid #95B7D0;
+	box-shadow:-1px 1px 2px 1px #E9EAF3 inset;
+	-moz-box-shadow: -1px 1px 2px 1px #E9EAF3 inset;
+	-webkit-box-shadow: -1px 1px 2px 1px #E9EAF3 inset;
+	border-radius:4px 4px 4px 4px;
+	-moz-border-radius:4px 4px 4px 4px;
+	-webkit-border-radius:4px 4px 4px 4px;
+	width:150px;
+}
+
+.jwindows-taskbar-context-menu ul li{
+	border: 1px solid white;
+	padding: 3px;
+	margin: 2px;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius:4px 4px 4px 4px;
+	box-shadow: -1px 1px 2px 1px #E9EAF3 inset;
+	-moz-box-shadow: -1px 1px 2px 1px #E9EAF3 inset;
+	-webkit-box-shadow: -1px 1px 2px 1px #E9EAF3 inset;
+	cursor: pointer;
+	background: #CCE8FC;
+}
+
+.jwindows-taskbar-context-menu ul li:hover{
+	background:#F8C45A;
+	margin-left:-2px;
+	margin-right:-2px;
+}
+
+.jwindows-taskbar-context-menu ul li.disabled{
+
+	background:#D1D3D6;
+	color:#949596;
+}
+
+.jwindows-taskbar-context-menu ul{
+	padding:0;
+	margin:0;
+}

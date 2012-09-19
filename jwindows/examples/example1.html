@@ -2,17 +2,37 @@
 <head>
 <title>Mi escritorio</title>
 
-<link href="../jquery.jwindows.css" />
-<link href="../jquery-ui-1.8.23.custom.css" />
+<link rel="stylesheet" href="../jquery.jwindows.css" />
+<link rel="stylesheet" href="../jquery-ui-1.8.23.custom.css" />
+<link rel="stylesheet" href="aplicaciones.css" />
 </head>
 <body>
 <h1>Escritorio</h1>
+
+<div id="ejecutores">
+
+	<div id="ej1">Icono1</div>
+	<div id="ej2">Icono2</div>
+	<div id="ej3">Icono3</div>
+	<div id="ej4">Icono4</div>
+
+</div>
+
 <div id='ventanas'>
 	
-	<div id="1"></div>
-	<div id="2"></div>
-	<div id="3"></div>
-	<div id="4"></div>
+	<div id="v1"><div>Contenido ventana1</div></div>
+	<div id="v2"><div>Contenido ventana2</div></div>
+	<div id="v3"><div>Contenido ventana3</div></div>
+	<div id="v4"><div>Contenido ventana4</div></div>
+
+</div>
+
+<div id='ventanas_iframe'>
+	
+	<div id="vi1"><iframe src="http://bing.com"></iframe></div>
+	<div id="vi2"><iframe></iframe></div>
+	<div id="vi3"><iframe></iframe></div>
+	<div id="vi4"><iframe></iframe></div>
 
 </div>
 
@@ -23,9 +43,11 @@
 <script src="../jquery.jwindows.js"></script>
 <script>
 
-$('#ventanas div').jwindows({
+$('#ventanas > div').jwindows({
 	
-	
+	titles		: ['apli1','apli2','apli3','apli4'],
+	ejecutores	: '#ejecutores > div',
+	reload		: false
 	
 	
 });
