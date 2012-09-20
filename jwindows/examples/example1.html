@@ -100,6 +100,7 @@ body{
 <button id='alert'>alert</button>
 <button id='messagebox'>messagebox</button>
 <button id='prompt'>prompt</button>
+<button id='crear'>crear ventana dinamicamente</button>
 
 <div id="ejecutores">
 
@@ -200,17 +201,38 @@ $('#messagebox').click(function(){
 $('#prompt').click(function(){
 	
 	$().jwindows('prompt',{mensaje: "hola",taskbar:'.jwindows-taskbar'},
-		function(r){
-        	if(r){
-            	alert(r);
-        	}else {
-            	alert("ohhhhhhhh");
-        	}                    
-    });	
+			function(r){
+	        	if(r){
+	            	alert(r);
+	        	}else {
+	            	alert("ohhhhhhhh");
+	        	}                    
+	    });	
 
 	
 });
 
+
+$('#crear').click(function(){
+	
+
+	
+	$().jwindows('prompt',{mensaje: "Inserta el contenido de la ventana",taskbar:'.jwindows-taskbar'},
+			function(r){
+	        	if(r){
+	        		$('<div><div>'+r+'</div></div>').jwindows({
+	        			titles		: ["Ventana Creada"],
+	        			taskbar		: ".jwindows-taskbar",
+	        			autoOpen	: true,
+	        			deleteContent:true,
+	        			center		: true
+	        		}).appendTo('body');
+	        	}else {
+	            	alert("No has escrito nada");
+	        	}                    
+	    });	
+	
+});
 </script>
 
 
