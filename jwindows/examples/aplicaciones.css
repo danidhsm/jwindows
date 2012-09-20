@@ -93,17 +93,6 @@
     padding-left: 43px;
 }
 
-.tmp_navegadoraplicaciones_app{
-	cursor:pointer;
-}
-
-.tmp_escritorio_iconos_NOMBRE {
-	color: #777;
-	/*opacity:0.5;*/
-}
-
-
-
 
 /*VENTANAS*/
 .jwindows-minimize,
@@ -153,13 +142,6 @@
 
 	background:#E3ECF4;
 	
-}
-
-#barra_de_aplicaciones{
-	bottom: 5px;
-    height: 25px;
-	left: 175px;
-	position: fixed;
 }
 
 

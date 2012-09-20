@@ -69,7 +69,6 @@
 .jwindows-alert{
     width:auto !important;
     height:auto !important;
-    z-index: 9999999 !important;
 }
 
 .jwindows-notification{
@@ -88,7 +87,6 @@
     width:auto !important;
     height:auto !important;
     text-align: center;
-    z-index: 9999999 !important;
 }
 
 .jwindows-msg{

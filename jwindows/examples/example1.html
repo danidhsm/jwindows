@@ -2,22 +2,104 @@
 <head>
 <title>Mi escritorio</title>
 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
 <link rel="stylesheet" href="../jquery.jwindows.css" />
 <link rel="stylesheet" href="../jquery-ui-1.8.23.custom.css" />
 <link rel="stylesheet" href="aplicaciones.css" />
 
 <style type="text/css">
 body{
-	color:#fff;
-	background: url('http://hdwallpaperpics.com/wallpaper/picture/image/209075xcitefun-3d-wallpaper-5.jpg');
-
+	
+	background: url('http://walls.free.total-wallpapers.com/free-wallpapers/837/Windows-7-ultimate--1-.jpeg');
+	background-size:cover;
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
 }
 
+#backgrounds{
+	float:right;
+	margin:50px;
+	
+}
+
+#backgrounds img{
+	box-shadow:0px 0px 3px 0px;#fff;
+	height:100px;
+	width: 200px;
+	margin:10px;
+	-webkit-transition: -webkit-transform 1s ease-out;
+	z-index:1 !important;
+}
+
+#backgrounds img:hover{
+	-webkit-transform: scale(1.5);
+	z-index:10 !important;
+}
+
+#ejecutores,#ejecutores_iframe{
+	text-shadow: 0px 2px 1px #000, 0px 1px 1px #000, 0px 1px 4px #000, 0px 1px 6px #000;
+	color:#fff;
+	font-variant:small-caps;
+	font-size:14px;
+	width:50px;
+	
+}
+
+#ejecutores > div,#ejecutores_iframe > div{
+
+	cursor:pointer;
+	width:70px;
+	height:70px;
+	padding:5px;
+	display:inline-block;
+	vertical-align:bottom;
+	line-height:70px;
+	text-align: center;
+	border-radius:10px;
+	margin:2px;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+#ejecutores > div:hover,#ejecutores_iframe > div:hover{
+
+	background: rgba(222,22,22,.5);
+
+}
 
 </style>
 </head>
 <body>
 <h1>Escritorio</h1>
+
+
+<div id='backgrounds'>
+	<div><img src="http://hdwallpaperpics.com/wallpaper/picture/image/209075xcitefun-3d-wallpaper-5.jpg" /></div>
+	<div><img src="http://www.loskuatrerosdelsur.cl/galeria/Windows-7-Wallpapers-1.jpeg" /></div>
+	<div><img src="http://walls.free.total-wallpapers.com/free-wallpapers/837/Windows-7-ultimate--1-.jpeg" /></div>
+</div>
+
+
+
+<!-- Esto es lo necesario lo de arriba es parafernalia, xD -->
+
+
+<button id='notification'>Notificación</button>
+<button id='alert'>alert</button>
+<button id='messagebox'>messagebox</button>
+<button id='prompt'>prompt</button>
 
 <div id="ejecutores">
 
@@ -25,6 +107,7 @@ body{
 	<div id="ej2">Icono2</div>
 	<div id="ej3">Icono3</div>
 	<div id="ej4">Icono4</div>
+	
 
 </div>
 
@@ -77,9 +160,75 @@ $('#ventanas_iframe > div').jwindows({
 	titles		: ["apli11","apli22","apli33","apli44"],
 	ejecutores	: "#ejecutores_iframe > div",
 	taskbar		: ".jwindows-taskbar",
-	srcs		: ["http://bing.com","http://bing.com","http://bing.com","http://bing.com"],
+	dblclick	: true,
+	srcs		: ["http://bing.com","","http://bing.com","http://bing.com"],
 	center		: true
 });
+
+
+
+$('#notification').click(function(){
+	
+	$().jwindows('notification',{mensaje: "hola",taskbar:'.jwindows-taskbar'});
+	
+});
+
+$('#alert').click(function(){
+	
+	$().jwindows('alert',{mensaje: "hola",taskbar:'.jwindows-taskbar'},
+
+        function(r){
+            if(r){
+                alert("siii");
+            }                 
+	});
+	
+});
+
+$('#messagebox').click(function(){
+	
+	$().jwindows('messageBox',{mensaje: "hola",taskbar:'.jwindows-taskbar'},
+            function(r){
+                    if(r){
+                        alert("siii");
+                    }else {
+                        alert("ohhhhhhhh");
+                    }                    
+                });
+	
+});
+$('#prompt').click(function(){
+	
+	$().jwindows('prompt',{mensaje: "hola",taskbar:'.jwindows-taskbar'},
+		function(r){
+        	if(r){
+            	alert(r);
+        	}else {
+            	alert("ohhhhhhhh");
+        	}                    
+    });	
+
+	
+});
+
 </script>
+
+
+
+<!-- Parafernalia -->
+<script type="text/javascript">
+	
+	var background='';
+
+	$('#backgrounds img').hover(function(){
+		
+		background=$('body').css('background');
+		$('body').css('background-image','url('+$(this).attr('src')+')');
+		
+		
+	});
+
+</script>
+
 
 </html>
